@@ -16,19 +16,32 @@ function Memeber() {
         {info
           .filter((wrestler) => wrestler.name === superstar)
           .map((wrestler) => (
-            <div key={wrestler.id}>
+            <div key={wrestler.id} className="relative">
               <div
                 style={{ "--image-url": `url(${wrestler.backgound})` }}
-                className="top-30 absolute left-0 block h-auto min-h-full w-full bg-[image:var(--image-url)] opacity-10 "
+                className="top-30 absolute left-0 block h-auto min-h-full w-full bg-[image:var(--image-url)] opacity-[0.12] "
               ></div>
               <div className="relative flex flex-col px-5 py-3">
                 <div className="order-2">
-                  <img src={Raw} alt="Raw logo" className="mt-4 w-[130px]" />
+                  <img
+                    src={Raw}
+                    alt="Raw logo"
+                    className="mb-7 mt-4 w-[130px]"
+                  />
                 </div>
-                <div className="order-1 flex items-center justify-between   border-b-[1px] border-black pb-2">
-                  <p className=" text-5xl font-bold">{wrestler.name}</p>
-                  <IoShareOutline className="text-3xl" />
+                <div className="order-1 flex items-center justify-between  border-b-[1px] border-black pb-2">
+                  <p className=" font-bold xxs:text-3xl md:text-5xl">
+                    {wrestler.name}
+                  </p>
+                  <IoShareOutline className="text-2xl md:text-3xl" />
                 </div>
+              </div>
+              <div className="relative xxs:flex xxs:justify-center md:block">
+                <img
+                  src={wrestler.img}
+                  alt={wrestler.name}
+                  className="h-[full] object-contain xxs:scale-100 md:h-[450px] md:scale-100"
+                />
               </div>
             </div>
           ))}

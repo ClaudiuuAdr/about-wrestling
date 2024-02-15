@@ -1,7 +1,7 @@
 export const info = [
   {
     id: 1,
-    img: "../src/assets/gunther.png",
+    img: "../src/assets/gunth.png",
     backgound: "../src/assets/guntherr.jpg",
     name: "Gunther",
   },
@@ -32,7 +32,7 @@ export const info = [
   },
   {
     id: 7,
-    img: "../src/assets/braun.png",
+    img: "../src/assets/brraun.png",
     name: "Braun Strowman",
   },
   {
