@@ -43,6 +43,11 @@ function Memeber() {
                   className="h-[full] object-contain xxs:scale-100 md:h-[450px] md:scale-100"
                 />
               </div>
+              <div>
+                <button className="absolute w-full bg-[#EC1927] py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-[#EC1900]">
+                  Superstar Stats
+                </button>
+              </div>
             </div>
           ))}
       </div>
