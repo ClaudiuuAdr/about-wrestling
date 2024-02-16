@@ -19,7 +19,7 @@ function Memeber() {
             <div key={wrestler.id} className="relative">
               <div
                 style={{ "--image-url": `url(${wrestler.backgound})` }}
-                className="top-30 absolute left-0 block h-auto min-h-full w-full bg-[image:var(--image-url)] opacity-[0.12] "
+                className="top-30 absolute left-0 block h-auto min-h-full w-full bg-[image:var(--image-url)] bg-cover bg-no-repeat opacity-[0.12]"
               ></div>
               <div className="relative flex flex-col px-5 py-3">
                 <div className="order-2">
