@@ -1,17 +1,29 @@
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Raw from "../assets/raw.svg";
 import { IoShareOutline } from "react-icons/io5";
 import { info } from "../date";
+import { AiOutlineClose } from "react-icons/ai";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Memeber() {
   const { superstar } = useParams();
+  const [stats, setStats] = useState(true);
+
+  const handleClick = () => {
+    setStats(true);
+  };
 
   useEffect(() => {
     document.title = `${superstar}`;
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <section>
+    <section className="max-w-[1500px]">
       <div>
         {info
           .filter((wrestler) => wrestler.name === superstar)
@@ -43,10 +55,62 @@ function Memeber() {
                   className="h-[full] object-contain xxs:scale-100 md:h-[450px] md:scale-100"
                 />
               </div>
-              <div>
-                <button className="absolute w-full bg-[#EC1927] py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-[#EC1900]">
-                  Superstar Stats
-                </button>
+              <div onClick={() => setStats(!stats)} className="relative">
+                {stats ? (
+                  <button className="absolute w-full bg-[#EC1927] py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-[#EC1900]">
+                    Superstar Stats
+                  </button>
+                ) : (
+                  ""
+                )}
+              </div>
+              <div
+                className={`group absolute right-0 bg-[#232828]  text-xl text-white transition-all duration-500 ease-in-out xxs:top-[12rem]  xxs:w-full ${stats ? "absolute mr-[-5555px]" : ""}`}
+              >
+                <div className="py-7">
+                  <div className="flex flex-col justify-center px-3">
+                    <div className="flex items-center justify-between">
+                      <h2>Superstar Stats</h2>
+                      <AiOutlineClose
+                        onClick={() => handleClick()}
+                        color="white"
+                        size={25}
+                      />
+                    </div>
+                    <div className=" border-b-[1px] border-white pb-5">
+                      <h3 className="py-6 text-[3rem] font-bold">
+                        {wrestler.name}
+                      </h3>
+                      <p className="flex items-center gap-4">
+                        Follow <FaXTwitter />
+                      </p>
+                    </div>
+                  </div>
+                  <div className="px-3 py-7">
+                    <h2 className="mb-3">Height</h2>
+                    <h3 className="border-b-[1px] border-white pb-10 text-[2.7rem] font-bold">
+                      {wrestler.height}
+                    </h3>
+                  </div>
+                  <div className="px-3">
+                    <h2>Hometowon</h2>
+                    <h3 className=" border-b-[1px] border-white py-2 pb-10 text-[1.7rem] font-bold">
+                      {wrestler.birth}
+                    </h3>
+                  </div>
+                  <div className="px-3 py-7">
+                    <h2>Signature Move</h2>
+                    <h3 className=" border-b-[1px] border-white py-2 pb-10 text-[1.7rem] font-bold">
+                      {wrestler.move}
+                    </h3>
+                  </div>
+                  <div className="px-3">
+                    <h2>Career Highlights</h2>
+                    <h3 className="border-b-[1px] border-white py-2 pb-10 text-[1.5rem] font-bold">
+                      {wrestler.carrer}
+                    </h3>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
