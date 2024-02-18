@@ -37,6 +37,7 @@ export const info = [
     move: "Dis-arm-her; Man-handle Slam",
     carrer:
       "Raw Women's Champion; SmackDown Women's Champion, NXT Women's Champion, WWE Women's Tag Team Champion, 2019 Women's Royal Rumble Match Winner",
+    details: "Sa vad daca merge detaliul",
   },
   {
     id: 7,
