@@ -23,8 +23,8 @@ function Memeber() {
   }, []);
 
   return (
-    <section className="max-w-[1500px]">
-      <div>
+    <section className="mx-auto max-w-[1500px]">
+      <div className="">
         {info
           .filter((wrestler) => wrestler.name === superstar)
           .map((wrestler) => (
@@ -52,7 +52,7 @@ function Memeber() {
                 <img
                   src={wrestler.img}
                   alt={wrestler.name}
-                  className="h-[full] object-contain xxs:scale-100 md:h-[450px] md:scale-100"
+                  className={`h-[full] object-contain duration-700 ease-in-out xxs:scale-100 md:mt-[-200px] md:w-[860px] ${stats ? "" : "lgg:ml-[-250px]"}`}
                 />
               </div>
               <div onClick={() => setStats(!stats)} className="relative">
@@ -65,7 +65,7 @@ function Memeber() {
                 )}
               </div>
               <div
-                className={`group absolute right-0 bg-[#232828]  text-xl text-white transition-all duration-500 ease-in-out xxs:top-[12rem]  xxs:w-full ${stats ? "absolute mr-[-5555px]" : ""}`}
+                className={`group absolute right-0 bg-[#232828] text-xl text-white transition-all duration-500 ease-in-out xxs:top-[-2px] xxs:w-full lgg:w-[80%] ${stats ? "invisible mr-[10opx] opacity-0 duration-700" : ""}`}
               >
                 <div className="py-7">
                   <div className="flex flex-col justify-center px-3">
