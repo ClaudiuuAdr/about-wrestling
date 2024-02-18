@@ -2,16 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-image: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-
-  color: white;
-} */
+body {
+  overflow-x: hidden !important;
+}
 
 @layer components {
   .mda {
