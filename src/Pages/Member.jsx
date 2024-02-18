@@ -4,7 +4,7 @@ import Raw from "../assets/raw.svg";
 import { IoShareOutline } from "react-icons/io5";
 import { info } from "../date";
 import { AiOutlineClose } from "react-icons/ai";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 
 function Memeber() {
   const { superstar } = useParams();
@@ -23,7 +23,7 @@ function Memeber() {
   }, []);
 
   return (
-    <section className="mx-auto max-w-[1500px]">
+    <section className=" ins mx-auto mt-10 max-w-[1750px]">
       <div className="">
         {info
           .filter((wrestler) => wrestler.name === superstar)
@@ -31,41 +31,52 @@ function Memeber() {
             <div key={wrestler.id} className="relative">
               <div
                 style={{ "--image-url": `url(${wrestler.backgound})` }}
-                className="top-30 absolute left-0 block h-auto min-h-full w-full bg-[image:var(--image-url)] bg-cover bg-no-repeat opacity-[0.12]"
+                className="top-30 absolute left-0 block h-auto min-h-full w-full  bg-[image:var(--image-url)] bg-cover bg-no-repeat opacity-[0.12]"
               ></div>
               <div className="relative flex flex-col px-5 py-3">
-                <div className="order-2">
+                <div
+                  className={`order-2 duration-700 ease-in-out md:right-28 md:order-1  md:ml-[15rem] md:flex md:justify-center lgg:ml-[14rem] ${stats ? "" : "lgg:ml-[-300px]"}`}
+                >
                   <img
                     src={Raw}
                     alt="Raw logo"
-                    className="mb-7 mt-4 w-[130px]"
+                    className="mb-7 mt-4 w-[130px] md:w-[200px]"
                   />
                 </div>
-                <div className="order-1 flex items-center justify-between  border-b-[1px] border-black pb-2">
-                  <p className=" font-bold xxs:text-3xl md:text-5xl">
+                <div
+                  className={`${stats ? "" : "lgg:ml-[-300px]"} order-1 flex items-center justify-between border-b-[1px] border-black pb-2 duration-700 ease-in-out md:ml-[15rem] md:flex md:flex-col md:justify-center md:gap-3 md:border-none  md:py-3 lgg:ml-[14rem] `}
+                >
+                  <p className=" z-[100] font-bold xxs:text-3xl md:text-4xl">
                     {wrestler.name}
                   </p>
-                  <IoShareOutline className="text-2xl md:text-3xl" />
+                  <IoShareOutline className="text-2xl md:hidden md:text-3xl" />
                 </div>
+              </div>
+              <div
+                className={`gap-5 duration-700 ease-in-out xxs:hidden md:ml-[14rem] md:mt-3 md:flex md:justify-center ${stats ? "" : "lgg:ml-[-300px]"}`}
+              >
+                <FaFacebookF size={25} className="z-[100] cursor-pointer" />
+                <FaXTwitter size={25} className="z-[100] cursor-pointer" />
+                <IoShareOutline size={25} className="z-[100] cursor-pointer" />
               </div>
               <div className="relative xxs:flex xxs:justify-center md:block">
                 <img
                   src={wrestler.img}
                   alt={wrestler.name}
-                  className={`h-[full] object-contain duration-700 ease-in-out xxs:scale-100 md:mt-[-200px] md:w-[860px] ${stats ? "" : "lgg:ml-[-250px]"}`}
+                  className={`h-[full] object-contain duration-700 ease-in-out xxs:scale-100 md:ml-[-200px] md:mt-[-200px] md:w-[860px] lgg:ml-0 ${stats ? "" : "lgg:ml-[-300px]"}`}
                 />
               </div>
               <div onClick={() => setStats(!stats)} className="relative">
                 {stats ? (
-                  <button className="absolute w-full bg-[#EC1927] py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-[#EC1900]">
-                    Superstar Stats
+                  <button className="absolute w-full bg-[#EC1927] py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-[#EC1900] md:right-[-100px] md:top-[-400px] md:w-[250px] md:rotate-90">
+                    <p> Superstar Stats</p>
                   </button>
                 ) : (
                   ""
                 )}
               </div>
               <div
-                className={`group absolute right-0 bg-[#232828] text-xl text-white transition-all duration-500 ease-in-out xxs:top-[-2px] xxs:w-full lgg:w-[80%] ${stats ? "invisible mr-[10opx] opacity-0 duration-700" : ""}`}
+                className={`group absolute right-0 z-[200] w-[700px] bg-[#232828] text-xl text-white transition-all duration-500 ease-in-out xxs:top-[-40px] xxs:w-full lgg:w-[80%] ${stats ? " invisible absolute indent-[200px] opacity-0 duration-700" : ""}`}
               >
                 <div className="py-7">
                   <div className="flex flex-col justify-center px-3">
@@ -75,6 +86,7 @@ function Memeber() {
                         onClick={() => handleClick()}
                         color="white"
                         size={25}
+                        className=" cursor-pointer"
                       />
                     </div>
                     <div className=" border-b-[1px] border-white pb-5">
