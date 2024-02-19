@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Raw from "../assets/raw.svg";
+import Smackdown from "../assets/smack.svg";
 import { IoShareOutline } from "react-icons/io5";
-import { info } from "../date";
+import { details } from "../date";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import Bio from "../Components/Bio";
 
-function Memeber() {
+function Membe() {
   const { superstar } = useParams();
   const [stats, setStats] = useState(true);
 
@@ -27,7 +27,7 @@ function Memeber() {
     <>
       <section className=" mx-auto mt-10 max-w-[1750px]">
         <div className="">
-          {info
+          {details
             .filter((wrestler) => wrestler.name === superstar)
             .map((wrestler) => (
               <div key={wrestler.id} className="relative">
@@ -40,7 +40,7 @@ function Memeber() {
                     className={`order-2 duration-700 ease-in-out md:right-28 md:order-1  md:ml-[15rem] md:flex md:justify-center lgg:ml-[14rem] ${stats ? "" : "lgg:ml-[-410px]"}`}
                   >
                     <img
-                      src={Raw}
+                      src={Smackdown}
                       alt="Raw logo"
                       className="mb-7 mt-4 w-[130px] md:w-[200px]"
                     />
@@ -73,7 +73,7 @@ function Memeber() {
                 </div>
                 <div onClick={() => setStats(!stats)} className="relative">
                   {stats ? (
-                    <button className="absolute w-full bg-[#EC1927] py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-[#EC1900] md:right-[-100px] md:top-[-400px] md:w-[250px] md:rotate-90">
+                    <button className="absolute w-full bg-[#3b30fe] py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-[#3b60fe] md:right-[-100px] md:top-[-350px] md:w-[250px] md:rotate-90">
                       <p> Superstar Stats</p>
                     </button>
                   ) : (
@@ -138,4 +138,4 @@ function Memeber() {
   );
 }
 
-export default Memeber;
+export default Membe;
