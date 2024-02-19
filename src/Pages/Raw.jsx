@@ -3,16 +3,22 @@ import Star from "../assets/sperr.jpg";
 import { info } from "../date";
 import { Link } from "react-router-dom";
 
-import Grind from "../Components/News";
-
 function Raww() {
   useEffect(() => {
     document.title = "Raw";
   });
+
+  useEffect(() => {
+    document.getElementById("imag").setAttribute("preload", "true");
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const box = "bg-black cursor-pointer relative aspect-square";
   return (
     <>
-      <Grind />
       <section className="relative bg-white">
         <div className="relative py-8">
           <img src={Star} alt="" className="w-[100%] " />
@@ -37,6 +43,7 @@ function Raww() {
                   <img
                     src={info.img}
                     className=" relative h-full w-full object-cover object-top "
+                    id="imag"
                   />
                   <p className="absolute bottom-3 left-3 font-semibold text-white sm:font-medium md:text-base  lg:text-2xl">
                     {info.name}

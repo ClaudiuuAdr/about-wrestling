@@ -1,18 +1,21 @@
-import React from "react";
+import { useEffect } from "react";
 import Seth from "../assets/rolllins.jpg";
 import Roman from "../assets/romann.jpg";
 import Raw from "../assets/raw.svg";
 import Smack from "../assets/smack.svg";
-import Hero from "./Hero";
 import { Link } from "react-router-dom";
+import News from "../Components/News";
 
 function Test() {
+  useEffect(() => {
+    document.getElementById("sth").setAttribute("preload", "true");
+  }, []);
   return (
     <>
       <section className="grid justify-center bg-black md:grid-cols-2">
         <div className=" relative cursor-pointer contrast-125 transition-opacity duration-700 ease-in-out hover:opacity-95 md:opacity-60  ">
           <Link to={"/raw"}>
-            <img src={Seth} alt="" className="h-full w-full " />
+            <img src={Seth} alt="" className="h-full w-full " id="sth" />
 
             <img
               src={Raw}
@@ -32,7 +35,7 @@ function Test() {
           </Link>
         </div>
       </section>
-      <Hero />
+      <News />
     </>
   );
 }
