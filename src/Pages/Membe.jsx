@@ -37,7 +37,7 @@ function Membe() {
                 ></div>
                 <div className="relative flex flex-col px-5 py-3">
                   <div
-                    className={`order-2 duration-700 ease-in-out md:right-28 md:order-1  md:ml-[15rem] md:flex md:justify-center lgg:ml-[14rem] ${stats ? "" : "lgg:ml-[-410px]"}`}
+                    className={`order-2 duration-700 ease-in-out md:right-28 md:order-1  md:ml-[15rem] md:flex md:justify-center  ${stats ? "lgg:ml-[14rem]" : "lgg:ml-[-410px]"}`}
                   >
                     <img
                       src={Smackdown}
@@ -46,7 +46,7 @@ function Membe() {
                     />
                   </div>
                   <div
-                    className={`order-1 flex items-center justify-between border-b-[1px] border-black pb-2 duration-700 ease-in-out md:ml-[15rem] md:flex md:flex-col md:justify-center md:gap-3 md:border-none  md:py-3 lgg:ml-[14rem] ${stats ? "" : "lgg:ml-[-410px]"}`}
+                    className={`order-1 flex items-center justify-between border-b-[1px] border-black pb-2 duration-700 ease-in-out md:ml-[15rem] md:flex md:flex-col md:justify-center md:gap-3 md:border-none  md:py-3      ${stats ? "lgg:ml-[14rem]" : "lgg:ml-[-410px]"}`}
                   >
                     <p className=" z-[100] font-bold xxs:text-3xl md:text-4xl">
                       {wrestler.name}
@@ -55,7 +55,7 @@ function Membe() {
                   </div>
                 </div>
                 <div
-                  className={`gap-5 duration-700 ease-in-out xxs:hidden md:ml-[14rem] md:mt-3 md:flex md:justify-center ${stats ? "" : "lgg:ml-[-410px]"}`}
+                  className={`gap-5 duration-700 ease-in-out xxs:hidden md:ml-[14rem] md:mt-3 md:flex md:justify-center ${stats ? "" : "lgg:ml-[-400px]"}`}
                 >
                   <FaFacebookF size={25} className="z-[100] cursor-pointer" />
                   <FaXTwitter size={25} className="z-[100] cursor-pointer" />
