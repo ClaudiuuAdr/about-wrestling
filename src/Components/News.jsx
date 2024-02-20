@@ -131,7 +131,7 @@ function Grind() {
                     Monday at {news.hour}
                   </p>
                 </div>
-                <div className=" mt-[30px] flex justify-between gap-1 align-middle  ">
+                <div className=" flex justify-between gap-1 align-middle  ">
                   <button className="w-full cursor-pointer bg-[#3b00fe] py-4 font-bold text-white duration-300 ease-in-out hover:bg-[#3b70fe] ">
                     Preview
                   </button>
