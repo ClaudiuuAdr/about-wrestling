@@ -383,3 +383,23 @@ export const details = [
     She quickly inspired young ladies to wear side ponytails and grown men to embrace hugs, engaging in classic showdowns against the likes of Asuka and Nia Jax and making history in NXT by competing in the first 30-minute WWE Iron Man Match`,
   },
 ];
+
+export const rwnws = [
+  {
+    id: 1,
+    date: "02/17",
+    title: "The new day and Jey Uso join forces against Imperium",
+    img: "../src/assets/meci.jpg",
+    hour: "8/7",
+  },
+];
+
+export const smnws = [
+  {
+    id: 1,
+    date: "02/20",
+    title: "The Bloodline like you've never seen before  ",
+    img: "../src/assets/smnews.jpg",
+    hour: "6/7",
+  },
+];
