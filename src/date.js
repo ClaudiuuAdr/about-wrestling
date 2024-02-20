@@ -398,7 +398,7 @@ export const smnws = [
   {
     id: 1,
     date: "02/20",
-    title: "The Bloodline like you've never seen before  ",
+    title: "The Bloodline like you've never seen before. Roman talks",
     img: "../src/assets/smnews.jpg",
     hour: "6/7",
   },
