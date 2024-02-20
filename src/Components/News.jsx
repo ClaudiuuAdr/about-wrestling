@@ -5,6 +5,7 @@ import { rwnws, smnws } from "../date";
 import { IoShareOutline } from "react-icons/io5";
 import { FaPlay } from "react-icons/fa";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function Grind() {
   return (
@@ -35,13 +36,15 @@ function Grind() {
           </div>
 
           <div className="bg-[#d7182a] lgg:relative lgg:flex">
-            <div>
-              <img
-                src={news.img}
-                alt="today"
-                className="lgg:aspect-video lgg:h-[312px] lgg:w-[678px]"
-              />
-            </div>
+            <Link to="/raw">
+              <div>
+                <img
+                  src={news.img}
+                  alt="today"
+                  className="lgg:aspect-video lgg:h-[312px] lgg:w-[678px]"
+                />
+              </div>
+            </Link>
             <div className="relative lgg:w-[450px]">
               <h2 className="mx-5 py-5 text-sm font-bold text-white underline underline-offset-8 lgg:mt-6 lgg:p-4 ">
                 RAW RESULTS FOR {news.date}
@@ -53,24 +56,28 @@ function Grind() {
               />
               <div className="relative">
                 <div className="relative">
-                  <h3 className="mx-5 text-3xl font-bold text-white lgg:ml-9 lgg:mt-3">
-                    {news.title}
-                  </h3>
+                  <Link to="/raw">
+                    <h3 className="mx-5 text-3xl font-bold text-white lgg:ml-9 lgg:mt-3">
+                      {news.title}
+                    </h3>
+                  </Link>
                   <p className="mx-5 pb-4 pt-2 text-white lgg:ml-9 lgg:mt-3">
                     Monday at {news.hour}
                   </p>
                 </div>
-                <div className="flex justify-between gap-1 align-middle ">
-                  <button className="w-full cursor-pointer bg-red-700 py-4 font-bold text-white duration-300 ease-in-out hover:bg-red-500 ">
-                    Preview
-                  </button>
-                  <button className="flex w-full cursor-pointer justify-center gap-3 bg-red-700 py-4 align-middle font-bold text-white duration-300 ease-in-out hover:bg-red-500">
-                    <span className="mt-1">
-                      <FaPlay color="white" size={18} />
-                    </span>
-                    Watch Higlights
-                  </button>
-                </div>
+                <Link to="/raw">
+                  <div className="flex justify-between gap-1 align-middle ">
+                    <button className="w-full cursor-pointer bg-red-700 py-4 font-bold text-white duration-300 ease-in-out hover:bg-red-500 ">
+                      Preview
+                    </button>
+                    <button className="flex w-full cursor-pointer justify-center gap-3 bg-red-700 py-4 align-middle font-bold text-white duration-300 ease-in-out hover:bg-red-500">
+                      <span className="mt-1">
+                        <FaPlay color="white" size={18} />
+                      </span>
+                      Watch Higlights
+                    </button>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -106,13 +113,15 @@ function Grind() {
           </div>
 
           <div className="bg-[#3b30fe]  lgg:relative lgg:flex">
-            <div>
-              <img
-                src={news.img}
-                alt="today"
-                className="lgg:aspect-video lgg:h-[312px] lgg:w-[678px]"
-              />
-            </div>
+            <Link to="/smackdown">
+              <div>
+                <img
+                  src={news.img}
+                  alt="today"
+                  className="lgg:aspect-video lgg:h-[312px] lgg:w-[678px]"
+                />
+              </div>
+            </Link>
             <div className="relative lgg:w-[450px]">
               <h2 className="mx-5 py-5 text-sm font-bold text-white underline underline-offset-8 lgg:mt-6 lgg:p-4 ">
                 SMACKDOWN RESULTS FOR {news.date}
@@ -124,24 +133,28 @@ function Grind() {
               />
               <div className="relative">
                 <div className="relative">
-                  <h3 className="mx-5 text-3xl font-bold text-white lgg:ml-9 lgg:mt-3">
-                    {news.title}
-                  </h3>
+                  <Link to="/smackdown">
+                    <h3 className="mx-5 text-3xl font-bold text-white lgg:ml-9 lgg:mt-3">
+                      {news.title}
+                    </h3>
+                  </Link>
                   <p className="mx-5 pb-4 pt-2 text-white lgg:ml-9 lgg:mt-3">
-                    Monday at {news.hour}
+                    Friday at {news.hour}
                   </p>
                 </div>
-                <div className=" flex justify-between gap-1 align-middle  ">
-                  <button className="w-full cursor-pointer bg-[#3b00fe] py-4 font-bold text-white duration-300 ease-in-out hover:bg-[#3b70fe] ">
-                    Preview
-                  </button>
-                  <button className="flex w-full cursor-pointer justify-center gap-3 bg-[#3b300fe] py-4 align-middle font-bold text-white duration-300 ease-in-out hover:bg-[#3b70fe]">
-                    <span className="mt-1">
-                      <FaPlay color="white" size={18} />
-                    </span>
-                    Watch Higlights
-                  </button>
-                </div>
+                <Link to="/smackdown">
+                  <div className=" flex justify-between gap-1 align-middle  ">
+                    <button className="w-full cursor-pointer bg-[#3b00fe] py-4 font-bold text-white duration-300 ease-in-out hover:bg-[#3b70fe] ">
+                      Preview
+                    </button>
+                    <button className="flex w-full cursor-pointer justify-center gap-3 bg-[#3b00fe] py-4 align-middle font-bold text-white duration-300 ease-in-out hover:bg-[#3b70fe]">
+                      <span className="mt-1">
+                        <FaPlay color="white" size={18} />
+                      </span>
+                      Watch Higlights
+                    </button>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

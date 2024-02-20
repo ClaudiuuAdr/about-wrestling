@@ -387,7 +387,7 @@ export const details = [
 export const rwnws = [
   {
     id: 1,
-    date: "02/17",
+    date: "02/16",
     title: "The new day and Jey Uso join forces against Imperium",
     img: "../src/assets/meci.jpg",
     hour: "8/7",
