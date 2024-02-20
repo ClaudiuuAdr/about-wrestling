@@ -57,11 +57,17 @@ function Memeber() {
                 <div
                   className={`gap-5 duration-700 ease-in-out xxs:hidden md:ml-[14rem] md:mt-3 md:flex md:justify-center ${stats ? "" : "lgg:ml-[-410px]"}`}
                 >
-                  <FaFacebookF size={25} className="z-[100] cursor-pointer" />
-                  <FaXTwitter size={25} className="z-[100] cursor-pointer" />
+                  <FaFacebookF
+                    size={25}
+                    className="z-[100] cursor-pointer hover:text-[#EC1927]"
+                  />
+                  <FaXTwitter
+                    size={25}
+                    className="z-[100] cursor-pointer hover:text-[#EC1927]"
+                  />
                   <IoShareOutline
                     size={25}
-                    className="z-[100] cursor-pointer"
+                    className="z-[100] cursor-pointer hover:text-[#EC1927]"
                   />
                 </div>
                 <div className="relative xxs:flex xxs:justify-center md:block">

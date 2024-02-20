@@ -5,7 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import Header from "./Components/Header";
-import Home from "./Pages/Home";
+import Belts from "./Pages/Belts";
 import Raw from "./Pages/Raw";
 import Smack from "./Pages/Smack";
 import Member from "./Pages/Member";
@@ -21,7 +21,7 @@ const router = createBrowserRouter(
       <Route path="/raw/:superstar" element={<Member />} />
       <Route path="/smackdown" element={<Smack />} />
       <Route path="/smackdown/:superstar" element={<Membe />} />
-      <Route path="/test" element={<Hero />} />
+      <Route path="champions" element={<Belts />} />
     </Route>,
   ),
 );

@@ -57,11 +57,17 @@ function Membe() {
                 <div
                   className={`gap-5 duration-700 ease-in-out xxs:hidden md:ml-[14rem] md:mt-3 md:flex md:justify-center ${stats ? "" : "lgg:ml-[-400px]"}`}
                 >
-                  <FaFacebookF size={25} className="z-[100] cursor-pointer" />
-                  <FaXTwitter size={25} className="z-[100] cursor-pointer" />
+                  <FaFacebookF
+                    size={25}
+                    className="z-[100] cursor-pointer hover:text-[#3b30fe]"
+                  />
+                  <FaXTwitter
+                    size={25}
+                    className="z-[100] cursor-pointer hover:text-[#3b30fe]"
+                  />
                   <IoShareOutline
                     size={25}
-                    className="z-[100] cursor-pointer"
+                    className="z-[100] cursor-pointer hover:text-[#3b30fe]"
                   />
                 </div>
                 <div className="relative xxs:flex xxs:justify-center md:block">

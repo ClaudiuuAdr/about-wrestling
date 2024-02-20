@@ -403,3 +403,114 @@ export const smnws = [
     hour: "6/7",
   },
 ];
+
+export const belts = [
+  {
+    id: 1,
+    img: "../src/assets/centuri/heavy.png",
+    title: "World Heavyweight Title",
+    date: "2002-2013 ",
+  },
+  {
+    id: 2,
+    img: "../src/assets/centuri/intercoP.png",
+    title: "Intercontinental Championship",
+    date: "1979-Present",
+  },
+  {
+    id: 3,
+    img: "../src/assets/centuri/nxtChamp.png",
+    title: "NXT Championship",
+    date: "2012-Present",
+  },
+  {
+    id: 4,
+    img: "../src/assets/centuri/nxtNorth.png",
+    title: "NXT North American Championship",
+    date: "2018-Present",
+  },
+  {
+    id: 5,
+    img: "../src/assets/centuri/nxtTag.png",
+    title: "NXT Tag Team Championship",
+    date: "2013-Present",
+  },
+  {
+    id: 6,
+    img: "../src/assets/centuri/nxtWmntg.png",
+    title: "NXT Women Tag Team Championship",
+    date: "2021-2023",
+  },
+  {
+    id: 7,
+    img: "../src/assets/centuri/nxtWwmn.png",
+    title: "NXT Women's Championship",
+    date: "2013-Present",
+  },
+  {
+    id: 8,
+    img: "../src/assets/centuri/oldTag.png",
+    title: "Wolrd Tag Team Championship",
+    date: "1971-2010",
+  },
+  {
+    id: 9,
+    img: "../src/assets/centuri/rawTag.png",
+    title: "Raw Tag Team Championship",
+    date: "2002-Present",
+  },
+  {
+    id: 10,
+    img: "../src/assets/centuri/smackTag.png",
+    title: "Smackdown Tag Team Championship",
+    date: "2016-Present",
+  },
+  {
+    id: 11,
+    img: "../src/assets/centuri/ukWmn.png",
+    title: "NXT UK Women's Championship",
+    date: "2018-2022",
+  },
+  {
+    id: 12,
+    img: "../src/assets/centuri/universal2016.png",
+    title: "Universal Championship",
+    date: "2016-Present",
+  },
+  {
+    id: 13,
+    img: "../src/assets/centuri/usa.png",
+    title: "United States Championship",
+    date: "1975-Present",
+  },
+  {
+    id: 14,
+    img: "../src/assets/centuri/wmnTag.png",
+    title: "WWE Womwen's Tag Team Championship",
+    date: "2019-Present",
+  },
+  {
+    id: 15,
+    img: "../src/assets/centuri/womChamp.png",
+    title: "WWE Womane's Championship",
+    date: "2016-Present",
+  },
+  {
+    id: 16,
+    img: "../src/assets/centuri/womWorld.png",
+    title: "Women's World Championship",
+    date: "2016-Present",
+  },
+  {
+    id: 17,
+    img: "../src/assets/centuri/worldChamp.png",
+    title: "World Heavyweight Championship",
+    date: "2023-Present",
+  },
+  {
+    id: 18,
+    img: "../src/assets/centuri/wweChamp.png",
+    title: "WWE Championship",
+    date: "1963-Present",
+  },
+];
