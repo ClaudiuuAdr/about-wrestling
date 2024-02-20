@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  overflow-x: hidden !important;
-}
-
 @layer components {
   .mda {
     position: relative;
@@ -16,5 +12,25 @@ body {
     width: 100px;
     height: 1px;
     background-color: black;
+  }
+  .mnm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+  .mm {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    max-height: 100%;
   }
 }

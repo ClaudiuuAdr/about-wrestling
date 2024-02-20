@@ -7,11 +7,11 @@ import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 
 function Grind() {
   return (
-    <div className="lgg:mx-auto max-w-[1490px] md:flex md:px-10 md:pt-7 ">
+    <div className="mt-[-100px] max-w-[1490px] md:flex md:px-10 md:pt-7 lgg:mx-auto">
       <div className="relative bg-red-500 md:flex md:aspect-square md:h-[200px] md:w-[300px]">
         <img src={Raw} alt="raw" className=" mx-auto w-24 py-3 md:w-36" />
         <div className="mda absolute bottom-[-20px] h-[30px] w-[30px] bg-red-500 "></div>
-        <div className="lgg:left-[85px] absolute bottom-[-60px] left-[55px] hidden gap-3 md:flex">
+        <div className="absolute bottom-[-60px] left-[55px] hidden gap-3 md:flex lgg:left-[85px]">
           <FaFacebookF
             size={22}
             className="cursor-pointer duration-300 ease-in-out hover:text-red-600 "
@@ -25,19 +25,19 @@ function Grind() {
             className="cursor-pointer duration-300 ease-in-out hover:text-red-600"
           />
         </div>
-        <div className="md:line lgg:left-[82px] absolute bottom-[-75px] left-[52px]"></div>
+        <div className="md:line absolute bottom-[-75px] left-[52px] lgg:left-[82px]"></div>
       </div>
 
-      <div className="lgg:flex lgg:relative bg-[#d7182a]">
+      <div className="bg-[#d7182a] lgg:relative lgg:flex">
         <div>
           <img
             src={Meci}
             alt="today"
-            className="lgg:w-[678px] lgg:h-[312px] lgg:aspect-video"
+            className="lgg:aspect-video lgg:h-[312px] lgg:w-[678px]"
           />
         </div>
-        <div className="lgg:w-[450px] relative">
-          <h2 className="lgg:p-4 lgg:mt-6 mx-5 py-5 text-sm font-bold text-white underline underline-offset-8 ">
+        <div className="relative lgg:w-[450px]">
+          <h2 className="mx-5 py-5 text-sm font-bold text-white underline underline-offset-8 lgg:mt-6 lgg:p-4 ">
             RAW RESULTS FOR 2/12
           </h2>
           <IoShareOutline
@@ -47,10 +47,10 @@ function Grind() {
           />
           <div className="relative">
             <div className="relative">
-              <h3 className="lgg:ml-9 lgg:mt-3 mx-5 text-3xl font-bold text-white">
+              <h3 className="mx-5 text-3xl font-bold text-white lgg:ml-9 lgg:mt-3">
                 The new day and Jey Uso join forces against Imperium
               </h3>
-              <p className="lgg:ml-9 lgg:mt-3 mx-5 pb-4 pt-2 text-white">
+              <p className="mx-5 pb-4 pt-2 text-white lgg:ml-9 lgg:mt-3">
                 Monday at 8/7
               </p>
             </div>

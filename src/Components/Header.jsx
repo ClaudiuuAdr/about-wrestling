@@ -9,8 +9,9 @@ function Header() {
   const [navi, setNavi] = useState(true);
   const nav = [
     { title: "HOME", icon: <FaHome />, page: "homepage" },
-    { title: "PPV", icon: <MdStadium />, page: "ppv" },
-    { title: "CHAMPIONS", icon: <GiMuscleUp />, page: "champions" },
+    { title: "RAW", icon: <GiMuscleUp />, page: "raw" },
+    { title: "SMACKDOWN", icon: <GiMuscleUp />, page: "smackdown" },
+    { title: "CHAMPIONS", icon: <MdStadium />, page: "champions" },
   ];
   return (
     <>
