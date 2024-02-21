@@ -431,13 +431,13 @@ export const belts = [
   },
   {
     id: 5,
-    img: "../src/assets/centuri/nxtTag.png",
+    img: "../src/assets/centuri/mntg.png",
     title: "NXT Tag Team Championship",
     date: "2013-Present",
   },
   {
     id: 6,
-    img: "../src/assets/centuri/nxtWmntg.png",
+    img: "../src/assets/centuri/tag.png",
     title: "NXT Women Tag Team Championship",
     date: "2021-2023",
   },
@@ -455,9 +455,9 @@ export const belts = [
   },
   {
     id: 9,
-    img: "../src/assets/centuri/rawTag.png",
-    title: "Raw Tag Team Championship",
-    date: "2002-Present",
+    img: "../src/assets/centuri/truth.png",
+    title: "24/7 Championship",
+    date: "2019-2022",
   },
   {
     id: 10,
