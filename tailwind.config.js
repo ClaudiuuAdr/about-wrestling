@@ -7,6 +7,8 @@ export default {
         xxs: "310px",
         xs: "500px",
         lgg: "1230px",
+        blt: "930px",
+        bll: "600px",
       },
     },
   },
