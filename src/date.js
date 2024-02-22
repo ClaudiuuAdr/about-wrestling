@@ -438,9 +438,9 @@ export const belts = [
   },
   {
     id: 6,
-    img: "../src/assets/centuri/nxtWwmn.png",
-    title: "NXT Women's Championship",
-    date: "2013-Present",
+    img: "../src/assets/centuri/wmnTag.png",
+    title: "WWE Womwen's Tag Team Championship",
+    date: "2019-Present",
   },
   {
     id: 7,
@@ -480,9 +480,9 @@ export const belts = [
   },
   {
     id: 13,
-    img: "../src/assets/centuri/wmnTag.png",
-    title: "WWE Womwen's Tag Team Championship",
-    date: "2019-Present",
+    img: "../src/assets/centuri/nxtWwmn.png",
+    title: "NXT Women's Championship",
+    date: "2013-Present",
   },
 
   {
