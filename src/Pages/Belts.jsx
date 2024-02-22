@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode, Pagination, A11y, Navigation } from "swiper/modules";
 
 function Belts() {
   return (
@@ -23,27 +23,37 @@ function Belts() {
               navigation: true,
               freeMode: true,
               slidesPerGroup: 1,
+              keyboard: true,
+              A11y,
             },
             600: {
               slidesPerView: 2,
               navigation: true,
               freeMode: true,
               slidesPerGroup: 2,
+              keyboard: true,
+              A11y,
             },
             930: {
               slidesPerView: 3,
               navigation: true,
-              freeMode: false,
+              freeMode: true,
               slidesPerGroup: 3,
+              keyboard: true,
+              A11y,
             },
           }}
           pagination={{
             clickable: true,
             el: ".swiper-pagination",
           }}
-          modules={[FreeMode, Pagination]}
+          modules={[FreeMode, Navigation, Pagination, A11y]}
+          // navigation={{
+          //   nextEl: ".swiper-button-next",
+          //   prevEl: ".swiper-button-prev",
+          // }}
           navigation
-          className=" "
+          keyboard={{ enabled: true, onlyInViewport: true }}
         >
           {belts.map((items) => (
             <SwiperSlide
@@ -66,7 +76,9 @@ function Belts() {
             </SwiperSlide>
           ))}
           <div className=" bll:max-w-[180px] bll:block blt:max-w-[135px] relative mx-auto mb-7 hidden rounded-2xl border border-black bg-black p-[1rem]">
-            <div className="swiper-pagination"></div>
+            <div>
+              <div className="swiper-pagination"></div>
+            </div>
           </div>
         </Swiper>
       </div>
