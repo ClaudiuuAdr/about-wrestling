@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { belts } from "../date";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 // Import Swiper styles
 import "swiper/css";
@@ -20,7 +21,6 @@ function Belts() {
           breakpoints={{
             350: {
               slidesPerView: 1,
-              navigation: true,
               freeMode: true,
               slidesPerGroup: 1,
               keyboard: true,
@@ -28,7 +28,6 @@ function Belts() {
             },
             600: {
               slidesPerView: 2,
-              navigation: true,
               freeMode: true,
               slidesPerGroup: 2,
               keyboard: true,
@@ -36,24 +35,20 @@ function Belts() {
             },
             930: {
               slidesPerView: 3,
-              navigation: true,
               freeMode: true,
               slidesPerGroup: 3,
               keyboard: true,
               A11y,
             },
           }}
+          navigation
           pagination={{
             clickable: true,
             el: ".swiper-pagination",
           }}
+          keyboard
           modules={[FreeMode, Navigation, Pagination, A11y]}
-          // navigation={{
-          //   nextEl: ".swiper-button-next",
-          //   prevEl: ".swiper-button-prev",
-          // }}
-          navigation
-          keyboard={{ enabled: true, onlyInViewport: true }}
+          className="mySwiper"
         >
           {belts.map((items) => (
             <SwiperSlide
@@ -75,10 +70,8 @@ function Belts() {
               </p>
             </SwiperSlide>
           ))}
-          <div className=" bll:max-w-[180px] bll:block blt:max-w-[135px] relative mx-auto mb-7 hidden rounded-2xl border border-black bg-black p-[1rem]">
-            <div>
-              <div className="swiper-pagination"></div>
-            </div>
+          <div className=" relative mx-auto mb-7 hidden rounded-2xl border border-black bg-black p-[1rem] bll:block bll:max-w-[180px] blt:max-w-[135px]">
+            <div className="swiper-pagination"></div>
           </div>
         </Swiper>
       </div>
