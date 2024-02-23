@@ -12,7 +12,6 @@ import "swiper/css/navigation";
 // import required modules
 import { FreeMode, Pagination, A11y, Navigation } from "swiper/modules";
 import SwiperButton from "../Components/SwiperButton";
-import Btn from "../Components/Btn";
 
 function Belts() {
   return (
@@ -50,9 +49,6 @@ function Belts() {
           modules={[FreeMode, Pagination, A11y]}
           className="mySwiper"
         >
-          <span>
-            <Btn />
-          </span>
           {belts.map((items) => (
             <SwiperSlide
               key={items.id}
@@ -74,9 +70,9 @@ function Belts() {
               </p>
             </SwiperSlide>
           ))}
-          <div className=" relative  hidden rounded-2xl bll:mx-auto bll:mb-7 bll:block  bll:max-w-[180px] bll:border bll:border-black bll:bg-black blt:max-w-[135px]">
+          <div className=" relative mx-auto mb-10 w-[300px] rounded-2xl border-black  bg-black bll:mb-7 bll:block bll:max-w-[180px] bll:border blt:max-w-[135px]">
             <SwiperButton />
-            <div className="swiper-pagination  "></div>
+            <div className="swiper-pagination"></div>
           </div>
         </Swiper>
       </div>
