@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { belts } from "../date";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,6 +11,8 @@ import "swiper/css/navigation";
 
 // import required modules
 import { FreeMode, Pagination, A11y, Navigation } from "swiper/modules";
+import SwiperButton from "../Components/SwiperButton";
+import Btn from "../Components/Btn";
 
 function Belts() {
   return (
@@ -41,15 +42,17 @@ function Belts() {
               A11y,
             },
           }}
-          navigation
           pagination={{
             clickable: true,
             el: ".swiper-pagination",
           }}
           keyboard
-          modules={[FreeMode, Navigation, Pagination, A11y]}
+          modules={[FreeMode, Pagination, A11y]}
           className="mySwiper"
         >
+          <span>
+            <Btn />
+          </span>
           {belts.map((items) => (
             <SwiperSlide
               key={items.id}
@@ -62,6 +65,7 @@ function Belts() {
                   className="cursor-pointer px-[2.5rem] duration-500 ease-in-out hover:scale-105"
                 />
               </div>
+
               <p className="text-center text-2xl font-bold text-white xxs:text-xl">
                 {items.title}
               </p>
@@ -70,8 +74,9 @@ function Belts() {
               </p>
             </SwiperSlide>
           ))}
-          <div className=" relative mx-auto mb-7 hidden rounded-2xl border border-black bg-black p-[1rem] bll:block bll:max-w-[180px] blt:max-w-[135px]">
-            <div className="swiper-pagination"></div>
+          <div className=" relative  hidden rounded-2xl bll:mx-auto bll:mb-7 bll:block  bll:max-w-[180px] bll:border bll:border-black bll:bg-black blt:max-w-[135px]">
+            <SwiperButton />
+            <div className="swiper-pagination  "></div>
           </div>
         </Swiper>
       </div>
