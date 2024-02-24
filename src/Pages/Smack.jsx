@@ -16,7 +16,8 @@ function Smack() {
     window.scrollTo(0, 0);
   }, []);
 
-  const box = "bg-black cursor-pointer relative aspect-square";
+  const box =
+    "bg-black cursor-pointer relative aspect-square duration-500 ease-in-out hover:scale-105";
   return (
     <>
       <section className="relative bg-white">
@@ -33,11 +34,16 @@ function Smack() {
                 key={info.id}
                 className={`${box} ${
                   info.id === 3 || info.id === 10
-                    ? "row-span-2 hidden h-full md:col-span-2 md:block  "
+                    ? "row-span-2 hidden h-full md:col-span-2 md:block"
                     : ""
                 } ${
                   info.id === 3 || info.id === 10 ? " pointer-events-none" : ""
                 }`}
+                onKeyDown={(e) => {
+                  if ((info.id === 3 || info.id === 10) && e.key === "Enter") {
+                    e.preventDefault();
+                  }
+                }}
               >
                 <Link to={`/smackdown/${info.name}`}>
                   <img

@@ -16,7 +16,8 @@ function Raww() {
     window.scrollTo(0, 0);
   }, []);
 
-  const box = "bg-black cursor-pointer relative aspect-square";
+  const box =
+    "bg-black cursor-pointer relative aspect-square duration-500 ease-in-out hover:scale-105";
   return (
     <>
       <section className="relative bg-white">
@@ -36,13 +37,18 @@ function Raww() {
                     ? "row-span-2 hidden h-full md:col-span-2 md:block  "
                     : ""
                 } ${
-                  info.id === 3 || info.id === 10 ? " pointer-events-none" : ""
+                  info.id === 3 || info.id === 10 ? " pointer-events-none " : ""
                 }`}
+                onKeyDown={(e) => {
+                  if ((info.id === 3 || info.id === 10) && e.key === "Enter") {
+                    e.preventDefault();
+                  }
+                }}
               >
                 <Link to={`/raw/${info.name}`}>
                   <img
                     src={info.img}
-                    className=" relative h-full w-full object-cover object-top "
+                    className="relative h-full w-full object-cover object-top"
                     id="imag"
                   />
                   <p className="absolute bottom-3 left-3 font-semibold text-white sm:font-medium md:text-base  lg:text-2xl">
