@@ -17,6 +17,10 @@ function Belts() {
   return (
     <>
       <div className=" mx-auto max-w-[1500px] bg-[#3a4242]">
+        <div className="border-b-[1px] border-white px-10 py-3 pb-3">
+          <h1 className="font-bold text-white">WWE</h1>
+          <h2 className="mt-[-7px] text-3xl text-white">CHAMPIONSHIP</h2>
+        </div>
         <Swiper
           breakpoints={{
             350: {
@@ -58,7 +62,7 @@ function Belts() {
                 <img
                   src={items.img}
                   alt=""
-                  className="cursor-pointer px-[2.5rem] duration-500 ease-in-out hover:scale-105"
+                  className="cursor-pointer px-[2.3rem] duration-500 ease-in-out hover:scale-105"
                 />
               </div>
 
