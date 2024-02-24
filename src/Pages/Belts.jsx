@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 // import required modules
 import { FreeMode, Pagination, A11y, Navigation } from "swiper/modules";
 import SwiperButton from "../Components/SwiperButton";
+import Abelt from "../Components/Abelt";
 
 function Belts() {
   return (
@@ -80,7 +81,7 @@ function Belts() {
           </div>
         </Swiper>
       </div>
-      <div>test sa vad</div>
+      <Abelt />
     </>
   );
 }
