@@ -219,19 +219,19 @@ export const details = [
   },
   {
     id: 4,
-    img: "../src/assets/bobb.png",
-    backgound: "../src/assets/bobby.jpg",
-    name: "Bobby Lashley",
-    height: `6'3”`,
-    birth: "Colorado Springs, Colo.",
-    move: "AHurt Lock; Spear",
+    img: "../src/assets/dakota.png",
+    backgound: "../src/assets/dako.jpg",
+    name: "Dakota Kai",
+    height: `5'6”`,
+    birth: "Auckland, New Zealand",
+    move: "Go to Kick",
     carrer:
-      "WWE Champion; Intercontinental Champion; United States Champion; ECW Champion; 2023 Andre the Giant Memorial Battle Royal Winner",
-    details: `Looking for credentials? The dominant Bobby Lashley is a three-time wrestling national champion and a four-time wrestling All-American. He's also a two-time Armed Forces Champion and took home the silver medal in the 2002 CISM World Championships, competing against the best of the rest of the world's military. 
+      "WWE Women's Tag Team Champion, NXT Women's Tag Team Champion; 2021 Dusty Rhodes Tag Team Classic Winner",
+    details: `If you've seen a woman kick her opponent so hard that chirping cartoon birds pop out at any point over the last 10 years, there's a good chance it was Dakota Kai doing the kicking.
 
-    Yet, for Lashley, all that was a precursor to training for WWE. First coming to the squared circle through WWE's ECW brand, Lashley fought his way to becoming one of the final ECW Champions. After further honing his craft outside of WWE in the MMA world, Lashley made an explosive surprise return to Raw in 2018. 
+    The Kiwi Superstar perfected her striking ability on the international independent scene for years, competing from Australasia to Japan, before being recruited to the WWE Performance Center in 2017. Her introduction to the WWE Universe came months later during the inaugural Mae Young Classic, where she impressed with a run into the Quarterfinals.
     
-    Since his return, “The All Mighty” captured both Intercontinental and United States Championship gold and arose to prominence as the Chief Hurt Officer of The Hurt Business.`,
+    Once she landed in NXT, Kai quickly won over the NXT faithful with her sunny disposition and high-impact arsenal. `,
   },
   {
     id: 5,
@@ -352,19 +352,19 @@ export const details = [
   },
   {
     id: 13,
-    img: "../src/assets/dakota.png",
-    backgound: "../src/assets/dako.jpg",
-    name: "Dakota Kai",
-    height: `5'6”`,
-    birth: "Auckland, New Zealand",
-    move: "Go to Kick",
+    img: "../src/assets/bobb.png",
+    backgound: "../src/assets/bobby.jpg",
+    name: "Bobby Lashley",
+    height: `6'3”`,
+    birth: "Colorado Springs, Colo.",
+    move: "AHurt Lock; Spear",
     carrer:
-      "WWE Women's Tag Team Champion, NXT Women's Tag Team Champion; 2021 Dusty Rhodes Tag Team Classic Winner",
-    details: `If you've seen a woman kick her opponent so hard that chirping cartoon birds pop out at any point over the last 10 years, there's a good chance it was Dakota Kai doing the kicking.
+      "WWE Champion; Intercontinental Champion; United States Champion; ECW Champion; 2023 Andre the Giant Memorial Battle Royal Winner",
+    details: `Looking for credentials? The dominant Bobby Lashley is a three-time wrestling national champion and a four-time wrestling All-American. He's also a two-time Armed Forces Champion and took home the silver medal in the 2002 CISM World Championships, competing against the best of the rest of the world's military. 
 
-    The Kiwi Superstar perfected her striking ability on the international independent scene for years, competing from Australasia to Japan, before being recruited to the WWE Performance Center in 2017. Her introduction to the WWE Universe came months later during the inaugural Mae Young Classic, where she impressed with a run into the Quarterfinals.
+    Yet, for Lashley, all that was a precursor to training for WWE. First coming to the squared circle through WWE's ECW brand, Lashley fought his way to becoming one of the final ECW Champions. After further honing his craft outside of WWE in the MMA world, Lashley made an explosive surprise return to Raw in 2018. 
     
-    Once she landed in NXT, Kai quickly won over the NXT faithful with her sunny disposition and high-impact arsenal. `,
+    Since his return, “The All Mighty” captured both Intercontinental and United States Championship gold and arose to prominence as the Chief Hurt Officer of The Hurt Business.`,
   },
   {
     id: 14,

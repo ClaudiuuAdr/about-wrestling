@@ -48,14 +48,14 @@ function Memeber() {
                   <div
                     className={`order-1 flex items-center justify-between border-b-[1px] border-black pb-2 duration-700 ease-in-out md:ml-[15rem] md:flex md:flex-col md:justify-center md:gap-3 md:border-none  md:py-3      ${stats ? "lgg:ml-[14rem]" : "lgg:ml-[-410px]"}`}
                   >
-                    <p className=" z-[100] font-bold xxs:text-3xl md:text-4xl">
+                    <p className=" z-[100] py-3 font-bold xxs:text-3xl md:border-y-[1px] md:border-black md:text-4xl">
                       {wrestler.name}
                     </p>
                     <IoShareOutline className="text-2xl md:hidden md:text-3xl" />
                   </div>
                 </div>
                 <div
-                  className={`gap-5 duration-700 ease-in-out xxs:hidden md:ml-[14rem] md:mt-3 md:flex md:justify-center ${stats ? "" : "lgg:ml-[-410px]"}`}
+                  className={`gap-5 duration-700 ease-in-out xxs:hidden md:ml-[14rem] md:mt-1 md:flex md:justify-center ${stats ? "" : "lgg:ml-[-410px]"}`}
                 >
                   <FaFacebookF
                     size={25}
