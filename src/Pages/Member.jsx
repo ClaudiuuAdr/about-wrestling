@@ -79,7 +79,7 @@ function Memeber() {
                 </div>
                 <div onClick={() => setStats(!stats)} className="relative">
                   {stats ? (
-                    <button className="absolute w-full bg-[#EC1927] py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-[#EC1900] md:right-[-100px] md:top-[-400px] md:w-[250px] md:rotate-90">
+                    <button className="absolute w-full bg-[#EC1927] py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-[#EC1900] md:right-[-99px] md:top-[-400px] md:w-[250px] md:rotate-90">
                       <p> Superstar Stats</p>
                     </button>
                   ) : (

@@ -79,7 +79,7 @@ function Membe() {
                 </div>
                 <div onClick={() => setStats(!stats)} className="relative">
                   {stats ? (
-                    <button className="absolute w-full bg-[#3b30fe] py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-[#3b60fe] md:right-[-100px] md:top-[-350px] md:w-[250px] md:rotate-90">
+                    <button className="absolute w-full bg-[#3b30fe] py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-[#3b60fe] md:right-[-99px] md:top-[-350px] md:w-[250px] md:rotate-90">
                       <p> Superstar Stats</p>
                     </button>
                   ) : (
