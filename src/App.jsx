@@ -11,6 +11,7 @@ import Smack from "./Pages/Smack";
 import Member from "./Pages/Member";
 import Membe from "./Pages/Membe";
 import Hero from "./Pages/Hero";
+import Error from "./Pages/Error";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
       <Route path="/smackdown" element={<Smack />} />
       <Route path="/smackdown/:superstar" element={<Membe />} />
       <Route path="champions" element={<Belts />} />
+      <Route path="*" element={<Error />} />
     </Route>,
   ),
 );
