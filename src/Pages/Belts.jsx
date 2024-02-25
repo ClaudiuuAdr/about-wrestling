@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { belts } from "../date";
@@ -15,6 +15,9 @@ import SwiperButton from "../Components/SwiperButton";
 import Abelt from "../Components/Abelt";
 
 function Belts() {
+  useEffect(() => {
+    document.title = "Belts";
+  });
   return (
     <>
       <div className=" mx-auto max-w-[1500px] bg-[#3a4242]">

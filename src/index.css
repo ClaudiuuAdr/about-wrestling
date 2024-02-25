@@ -13,6 +13,11 @@
     height: 1px;
     background-color: black;
   }
+  .liniuta {
+    border: 1px solid black;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
   .mnm {
     display: flex;
     justify-content: center;
