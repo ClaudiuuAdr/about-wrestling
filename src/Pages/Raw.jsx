@@ -27,7 +27,11 @@ function Raww() {
         <div>
           <h2 className=" mx-20 mb-10 text-3xl font-bold text-black">
             <span className="text-slate-400">RAW</span> Roster:
+            <span className="hidden blt:block">
+              see your favorite wrestler's stats
+            </span>
           </h2>
+
           <div className="mx-auto grid max-w-[1500px] grid-cols-2 grid-rows-5 gap-5 px-3 pb-10 md:grid-cols-4 md:px-[3rem]">
             {info.map((info) => (
               <div
