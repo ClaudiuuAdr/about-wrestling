@@ -17,7 +17,7 @@ function Smack() {
   }, []);
 
   const box =
-    "bg-black cursor-pointer relative aspect-square duration-500 ease-in-out hover:scale-105";
+    "bg-black cursor-pointer relative aspect-square duration-500 ease-in-out overflow-hidden";
   return (
     <>
       <section className="relative bg-white">
@@ -51,7 +51,7 @@ function Smack() {
                 <Link to={`/smackdown/${info.name}`}>
                   <img
                     src={info.img}
-                    className=" relative h-full w-full object-cover object-top "
+                    className="relative h-full w-full object-cover object-top transition-all duration-500 hover:scale-110"
                     id="imag"
                   />
                   <p className="absolute bottom-3 left-3 font-semibold text-white sm:font-medium md:text-base  lg:text-2xl">
