@@ -9,6 +9,7 @@ export default {
         lgg: "1230px",
         blt: "930px",
         bll: "600px",
+        exx: "1700px",
       },
     },
   },

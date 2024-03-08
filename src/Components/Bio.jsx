@@ -7,7 +7,7 @@ function Bio() {
   return (
     <>
       <section>
-        <div className="mx-3 mt-[60px] lgg:px-20">
+        <div className="exx:mx-[7rem] mx-3 mt-[60px] lgg:px-20">
           {info
             .filter((wrestler) => wrestler.name === superstar)
             .map((wrestler) => (
@@ -24,7 +24,7 @@ function Bio() {
         </div>
       </section>
       <section>
-        <div className="mx-3 mt-[60px] lgg:px-20">
+        <div className="exx:mx-[7rem] mx-3 mt-[60px] lgg:px-20">
           {details
             .filter((wrestler) => wrestler.name === superstar)
             .map((wrestler) => (
