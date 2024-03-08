@@ -25,7 +25,7 @@ function Smack() {
           <img src={Star} alt="" className="w-[100%] " />
         </div>
         <div>
-          <h2 className=" mx-20 mb-10 text-3xl font-bold text-black">
+          <h2 className=" mx-20 mb-10 text-center text-3xl font-bold text-black">
             <span className="text-slate-400">SMACKDOWN</span> Roster:{" "}
             <span className="hidden blt:block">
               see your favorite wrestler's stats
