@@ -26,7 +26,7 @@ function Raww() {
         </div>
         <div>
           <h2 className=" mx-20 mb-10 text-center text-3xl font-bold text-black">
-            <span className="text-red-400">RAW</span> Roster:
+            <span className="text-[#EC1927]">RAW</span> Roster:
             <span className="hidden blt:block">
               see your favorite wrestler's stats
             </span>

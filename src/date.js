@@ -1,5 +1,29 @@
 import Gunther from "./assets/gunth.png";
 import Gunth from "./assets/guntherr.jpg";
+import Andrade from "./assets/andrade.png";
+import Andrad from "./assets/andradee.jpg";
+import ImgU from "./assets/papp.jpg";
+import Rhea from "./assets/rheaa.png";
+import Rhe from "./assets/rhea.jpg";
+import Jey from "./assets/uso.png";
+import Je from "./assets/usso.jpg";
+import Beky from "./assets/becky.png";
+import Bek from "./assets/beckyy.jpg";
+import Liv from "./assets/liv.png";
+import Li from "./assets/livv.jpg";
+import Chelsea from "./assets/chelsea.png";
+import Chels from "./assets/chelseaa.jpg";
+import Punk from "./assets/punk.png";
+import Pun from "./assets/punkk.jpg";
+import ImgD from "./assets/coop.jpg";
+import Cena from "./assets/cena.png";
+import Cen from "./assets/cenaa.jpg";
+import Damien from "./assets/damien.png";
+import Dam from "./assets/damienn.jpg";
+import Drew from "./assets/drew.png";
+import Dre from "./assets/dreww.jpg";
+import Finn from "./assets/finn.png";
+import Fin from "./assets/fin.jpg";
 export const info = [
   {
     id: 1,
@@ -18,9 +42,9 @@ export const info = [
   },
   {
     id: 2,
-    img: "../src/assets/andrade.png",
+    img: Andrade,
     name: "Andrade",
-    backgound: "../src/assets/andradee.jpg",
+    backgound: Andrad,
     height: `5'9"`,
     birth: "Gomez Palacio, Durango, Mexico",
     move: "Hammerlock DDT",
@@ -31,13 +55,13 @@ export const info = [
   },
   {
     id: 3,
-    img: "../src/assets/papp.jpg",
+    img: ImgU,
   },
   {
     id: 4,
-    img: "../src/assets/rheaa.png",
+    img: Rhea,
     name: "Rhea Ripley",
-    backgound: "../src/assets/rhea.jpg",
+    backgound: Rhe,
     height: `5'7"`,
     birth: "Adelaide, South Australia",
     move: "Riptide; Prism Trap",
@@ -51,9 +75,9 @@ export const info = [
   },
   {
     id: 5,
-    img: "../src/assets/uso.png",
+    img: Jey,
     name: "Jey Uso",
-    backgound: "../src/assets/usso.jpg",
+    backgound: Je,
     height: `6'2"`,
     birth: "San Francisco",
     move: "Double Uce",
@@ -65,9 +89,9 @@ export const info = [
   },
   {
     id: 6,
-    img: "../src/assets/becky.png",
+    img: Beky,
     name: "Becky Linch",
-    backgound: "../src/assets/beckyy.jpg",
+    backgound: Bek,
     height: `5'6"`,
     birth: "Dublin, Irleand",
     move: "Dis-arm-her; Man-handle Slam",
@@ -79,9 +103,9 @@ export const info = [
   },
   {
     id: 7,
-    img: "../src/assets/liv.png",
+    img: Liv,
     name: "Liv Morgan",
-    backgound: "../src/assets/livv.jpg",
+    backgound: Li,
     height: `5'3"`,
     birth: "Elmwood Park, N.J.",
     move: "Oblivion",
@@ -92,9 +116,9 @@ export const info = [
   },
   {
     id: 8,
-    img: "../src/assets/chelsea.png",
+    img: Chelsea,
     name: "Chelsea Green",
-    backgound: "../src/assets/chelseaa.jpg",
+    backgound: Chels,
     height: `-`,
     birth: "Victoria, British Columbia, Canada",
     move: "I'm-Prettier",
@@ -107,9 +131,9 @@ export const info = [
   },
   {
     id: 9,
-    img: "../src/assets/punk.png",
+    img: Punk,
     name: "CM Punk",
-    backgound: "../src/assets/punkk.jpg",
+    backgound: Pun,
     height: `6'2”`,
     birth: "Chicago",
     move: "G.T.S. (Go to Sleep); Anaconda Vise",
@@ -121,14 +145,14 @@ export const info = [
   },
   {
     id: 10,
-    img: "../src/assets/coop.jpg",
+    img: ImgD,
     name: "",
   },
   {
     id: 11,
-    img: "../src/assets/cena.png",
+    img: Cena,
     name: "John Cena",
-    backgound: "../src/assets/cenaa.jpg",
+    backgound: Cen,
     height: `6'1”`,
     birth: "West Newbury, Mass.",
     move: "Attitude Adjustment; STF",
@@ -140,9 +164,9 @@ export const info = [
   },
   {
     id: 12,
-    img: "../src/assets/damien.png",
+    img: Damien,
     name: "Damien Priest",
-    backgound: "../src/assets/damienn.jpg",
+    backgound: Dam,
     height: `6'5”`,
     birth: "New York, N.Y.",
     move: "Reckoning; South of Heaven; Broken Arrow",
@@ -154,9 +178,9 @@ export const info = [
   },
   {
     id: 13,
-    img: "../src/assets/drew.png",
+    img: Drew,
     name: "Drew Mcintyre",
-    backgound: "../src/assets/dreww.jpg",
+    backgound: Dre,
     height: `6'5”`,
     birth: "Ayr, Scotland",
     move: "Claymore; Glasgow Kiss",
@@ -168,9 +192,9 @@ export const info = [
   },
   {
     id: 14,
-    img: "../src/assets/finn.png",
+    img: Finn,
     name: "Finn Balor",
-    backgound: "../src/assets/fin.jpg",
+    backgound: Finn,
     height: `5'11”`,
     birth: "Bray, County Wicklow, Ireland",
     move: "Coup de Grâce; 1916",
