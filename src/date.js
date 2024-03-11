@@ -1,8 +1,10 @@
+import { Gunther } from "./assets/gunth.png";
+import { Gunth } from "./assets/guntherr.jpg";
 export const info = [
   {
     id: 1,
-    img: "../src/assets/gunth.png",
-    backgound: "../src/assets/guntherr.jpg",
+    img: { Gunther },
+    backgound: { Gunth },
     name: "Gunther",
     height: `6'4"`,
     birth: "Vienna, Austria",
