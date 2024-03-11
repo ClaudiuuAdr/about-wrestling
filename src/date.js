@@ -55,7 +55,7 @@ import MeciD from "./assets/smnews.jpg";
 import BelUnu from "./assets/centuri/heavy.png";
 import BelDoi from "./assets/centuri/intercoP.png";
 import BelTrei from "./assets/centuri/pls.png";
-// import BelPatru from ".assets/centuri/nord.png";
+import BelPatru from ".assets/centuri/nord.png";
 import BelCinci from "./assets/centuri/tag.png";
 import BelSase from "./assets/centuri/wmnTag.png";
 import BelSap from "./assets/centuri/oldTag.png";
@@ -495,7 +495,7 @@ export const belts = [
   },
   {
     id: 4,
-    // img: BelPatru,
+    img: BelPatru,
     title: "NXT North American Championship",
     date: "2018-Present",
   },
