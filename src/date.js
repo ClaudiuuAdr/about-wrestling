@@ -64,7 +64,7 @@ import BelNou from "./assets/centuri/smackTag.png";
 import Zece from "./assets/centuri/ukWmn.png";
 import Unu from "./assets/centuri/universal2016.png";
 import Doi from "./assets/centuri/usa.png";
-import Trei from "./assets/centuri/nxtWwmn.png";
+import Trei from "./assets/centuri/nxtwWmn.png";
 import Patru from "./assets/centuri/womWorld.png";
 import Cinci from "./assets/centuri/worldChamp.png";
 
