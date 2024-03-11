@@ -52,6 +52,21 @@ import Bayley from "./assets/bayley.png";
 import Bayle from "./assets/bailey.jpg";
 import MeciU from "./assets/meci.jpg";
 import MeciD from "./assets/smnews.jpg";
+import BelUnu from "./assets/centuri/heavy.png";
+import BelDoi from "./assets/centuri/intercoP.png";
+import BelTrei from "./assets/centuri/pls.png";
+// import BelPatru from ".assets/centuri/nord.png";
+import BelCinci from "./assets/centuri/tag.png";
+import BelSase from "./assets/centuri/wmnTag.png";
+import BelSap from "./assets/centuri/oldTag.png";
+import BelOpt from "./assets/centuri/truth.png";
+import BelNou from "./assets/centuri/smackTag.png";
+import Zece from "./assets/centuri/ukWmn.png";
+import Unu from "./assets/centuri/universal2016.png";
+import Doi from "./assets/centuri/usa.png";
+import Trei from "./assets/centuri/nxtWwmn.png";
+import Patru from "./assets/centuri/womWorld.png";
+import Cinci from "./assets/centuri/worldChamp.png";
 
 export const info = [
   {
@@ -462,93 +477,93 @@ export const smnws = [
 export const belts = [
   {
     id: 1,
-    img: "../src/assets/centuri/heavy.png",
+    img: BelUnu,
     title: "World Heavyweight Title",
     date: "2002-2013 ",
   },
   {
     id: 2,
-    img: "../src/assets/centuri/intercoP.png",
+    img: BelDoi,
     title: "Intercontinental Championship",
     date: "1979-Present",
   },
   {
     id: 3,
-    img: "../src/assets/centuri/pls.png",
+    img: BelTrei,
     title: "WWE Championship",
     date: "1963-Present",
   },
   {
     id: 4,
-    img: "../src/assets/centuri/nxtNorth.png",
+    // img: BelPatru,
     title: "NXT North American Championship",
     date: "2018-Present",
   },
 
   {
     id: 5,
-    img: "../src/assets/centuri/tag.png",
+    img: BelCinci,
     title: "NXT Women Tag Team Championship",
     date: "2021-2023",
   },
   {
     id: 6,
-    img: "../src/assets/centuri/wmnTag.png",
+    img: BelSase,
     title: "WWE Womwen's Tag Team Championship",
     date: "2019-Present",
   },
   {
     id: 7,
-    img: "../src/assets/centuri/oldTag.png",
+    img: BelSap,
     title: "Wolrd Tag Team Championship",
     date: "1971-2010",
   },
   {
     id: 8,
-    img: "../src/assets/centuri/truth.png",
+    img: BelOpt,
     title: "24/7 Championship",
     date: "2019-2022",
   },
   {
     id: 9,
-    img: "../src/assets/centuri/smackTag.png",
+    img: BelNou,
     title: "Smackdown Tag Team Championship",
     date: "2016-Present",
   },
   {
     id: 10,
-    img: "../src/assets/centuri/ukWmn.png",
+    img: Zece,
     title: "NXT UK Women's Championship",
     date: "2018-2022",
   },
   {
     id: 11,
-    img: "../src/assets/centuri/universal2016.png",
+    img: Unu,
     title: "Universal Championship",
     date: "2016-Present",
   },
   {
     id: 12,
-    img: "../src/assets/centuri/usa.png",
+    img: Doi,
     title: "United States Championship",
     date: "1975-Present",
   },
   {
     id: 13,
-    img: "../src/assets/centuri/nxtWwmn.png",
+    img: Trei,
     title: "NXT Women's Championship",
     date: "2013-Present",
   },
 
   {
     id: 14,
-    img: "../src/assets/centuri/womWorld.png",
+    img: Patru,
     title: "Women's World Championship",
     date: "2016-Present",
   },
   {
     id: 15,
-    img: "../src/assets/centuri/worldChamp.png",
+    img: Cinci,
     title: "World Heavyweight Championship",
     date: "2023-Present",
   },
