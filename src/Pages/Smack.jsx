@@ -26,7 +26,7 @@ function Smack() {
         </div>
         <div>
           <h2 className=" mx-20 mb-10 text-center text-3xl font-bold text-black">
-            <span className="text-slate-400">SMACKDOWN</span> Roster:{" "}
+            <span className="text-[#3b30fe]">SMACKDOWN</span> Roster:{" "}
             <span className="hidden blt:block">
               see your favorite wrestler's stats
             </span>
