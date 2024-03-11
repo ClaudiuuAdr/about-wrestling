@@ -48,7 +48,7 @@ import Yeah from "./assets/la.png";
 import Yea from "./assets/laa.jpg";
 import Bobb from "./assets/bobb.png";
 import Bob from "./assets/bobby.jpg";
-import Bayley from "./assets/Bayley.png";
+import Bayley from "./assets/bayley.png";
 import Bayle from "./assets/bailey.jpg";
 import MeciU from "./assets/meci.jpg";
 import MeciD from "./assets/smnews.jpg";
