@@ -24,6 +24,35 @@ import Drew from "./assets/drew.png";
 import Dre from "./assets/dreww.jpg";
 import Finn from "./assets/finn.png";
 import Fin from "./assets/fin.jpg";
+import Ajs from "./assets/aj.png";
+import Aj from "./assets/ajj.jpg";
+import Asuka from "./assets/asuka.png";
+import Asuk from "./assets/asukaa.jpg";
+import ImgT from "./assets/mack.jpg";
+import Dakota from "./assets/dakota.png";
+import Dako from "./assets/dako.jpg";
+import Bron from "./assets/bron.png";
+import Bro from "./assets/bronn.jpg";
+import Yioo from "./assets/iyo.png";
+import Yio from "./assets/iyoo.jpg";
+import Jimm from "./assets/jim.png";
+import Jim from "./assets/jimm.jpg";
+import Kairi from "./assets/kairi.png";
+import Kair from "./assets/kairii.jpg";
+import Kevin from "./assets/kevin.png";
+import Kevi from "./assets/kevinn.jpg";
+import ImgPt from "./assets/smck.jpg";
+import Roman from "./assets/imper.png";
+import Roma from "./assets/imperr.jpg";
+import Yeah from "./assets/la.png";
+import Yea from "./assets/laa.jpg";
+import Bobb from "./assets/bobb.png";
+import Bob from "./assets/bobby.jpg";
+import Bayley from "./assets/Bayley.png";
+import Bayle from "./assets/bailey.jpg";
+import MeciU from "./assets/meci.jpg";
+import MeciD from "./assets/smnews.jpg";
+
 export const info = [
   {
     id: 1,
@@ -194,7 +223,7 @@ export const info = [
     id: 14,
     img: Finn,
     name: "Finn Balor",
-    backgound: Finn,
+    backgound: Fin,
     height: `5'11”`,
     birth: "Bray, County Wicklow, Ireland",
     move: "Coup de Grâce; 1916",
@@ -209,8 +238,8 @@ export const info = [
 export const details = [
   {
     id: 1,
-    img: "../src/assets/aj.png",
-    backgound: "../src/assets/ajj.jpg",
+    img: Ajs,
+    backgound: Aj,
     name: "Aj Styles",
     height: `5'11”`,
     birth: "Gainesville, GA",
@@ -225,8 +254,8 @@ export const details = [
   },
   {
     id: 2,
-    img: "../src/assets/asuka.png",
-    backgound: "../src/assets/asukaa.jpg",
+    img: Asuka,
+    backgound: Asuk,
     name: "Asuka",
     height: `5'3”`,
     birth: "Osaka, Japan",
@@ -241,12 +270,12 @@ export const details = [
   },
   {
     id: 3,
-    img: "../src/assets/mack.jpg",
+    img: ImgT,
   },
   {
     id: 4,
-    img: "../src/assets/dakota.png",
-    backgound: "../src/assets/dako.jpg",
+    img: Dakota,
+    backgound: Dako,
     name: "Dakota Kai",
     height: `5'6”`,
     birth: "Auckland, New Zealand",
@@ -261,8 +290,8 @@ export const details = [
   },
   {
     id: 5,
-    img: "../src/assets/bron.png",
-    backgound: "../src/assets/bronn.jpg",
+    img: Bron,
+    backgound: Bro,
     name: "Bronn Breakker",
     height: `6'0”`,
     birth: "Woodstock, Ga.",
@@ -279,8 +308,8 @@ export const details = [
   },
   {
     id: 6,
-    img: "../src/assets/iyo.png",
-    backgound: "../src/assets/iyoo.jpg",
+    img: Yioo,
+    backgound: Yio,
     name: "IYO Sky",
     height: `5'1”`,
     birth: "Tokyo, Japan",
@@ -295,8 +324,8 @@ export const details = [
   },
   {
     id: 7,
-    img: "../src/assets/jim.png",
-    backgound: "../src/assets/jimm.jpg",
+    img: Jimm,
+    backgound: Jim,
     name: "Jimmy Uso",
     height: `6'3”`,
     birth: "San Francisco",
@@ -311,8 +340,8 @@ export const details = [
   },
   {
     id: 8,
-    img: "../src/assets/kairi.png",
-    backgound: "../src/assets/kairii.jpg",
+    img: Kairi,
+    backgound: Kair,
     name: "Kairi Sane",
     height: `5'1”`,
     birth: "Yamaguchi, Japan",
@@ -325,8 +354,8 @@ export const details = [
   },
   {
     id: 9,
-    img: "../src/assets/kevin.png",
-    backgound: "../src/assets/kevinn.jpg",
+    img: Kevin,
+    backgound: Kevi,
     name: "Kevin Owens",
     height: `6'0”`,
     birth: "Marieville, Quebec, Canada",
@@ -341,12 +370,12 @@ export const details = [
   },
   {
     id: 10,
-    img: "../src/assets/smck.jpg",
+    img: ImgPt,
   },
   {
     id: 11,
-    img: "../src/assets/imper.png",
-    backgound: "../src/assets/imperr.jpg",
+    img: Roman,
+    backgound: Roma,
     name: "Roman Reigns",
     height: `6'3”`,
     birth: "Pensacola, Fla.",
@@ -363,8 +392,8 @@ export const details = [
   },
   {
     id: 12,
-    img: "../src/assets/la.png",
-    backgound: "../src/assets/laa.jpg",
+    img: Yeah,
+    backgound: Yea,
     name: "LA Knight",
     height: `-`,
     birth: "Maryland",
@@ -378,8 +407,8 @@ export const details = [
   },
   {
     id: 13,
-    img: "../src/assets/bobb.png",
-    backgound: "../src/assets/bobby.jpg",
+    img: Bobb,
+    backgound: Bob,
     name: "Bobby Lashley",
     height: `6'3”`,
     birth: "Colorado Springs, Colo.",
@@ -394,8 +423,8 @@ export const details = [
   },
   {
     id: 14,
-    img: "../src/assets/Bayley.png",
-    backgound: "../src/assets/bailey.jpg",
+    img: Bayley,
+    backgound: Bayle,
     name: "Bayley",
     height: `5'6”`,
     birth: "San Jose, Calif.",
@@ -415,7 +444,7 @@ export const rwnws = [
     id: 1,
     date: "02/16",
     title: "The new day and Jey Uso join forces against Imperium",
-    img: "../src/assets/meci.jpg",
+    img: MeciU,
     hour: "8/7",
   },
 ];
@@ -425,7 +454,7 @@ export const smnws = [
     id: 1,
     date: "02/20",
     title: "The Bloodline like you've never seen before. Roman talks",
-    img: "../src/assets/smnews.jpg",
+    img: MeciD,
     hour: "6/7",
   },
 ];
