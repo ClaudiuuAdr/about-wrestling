@@ -1,7 +1,7 @@
 export const info = [
   {
     id: 1,
-    img: "../src/assets/gunth.png",
+    img: "../src/dist/assets/gunth.png",
     backgound: "../src/assets/guntherr.jpg",
     name: "Gunther",
     height: `6'4"`,
